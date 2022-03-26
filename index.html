@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div class="container">
+            <h1>ToDoList</h1>
+            <div class="form-new-task">
+                
+                <input class="input-todo" id="new-task"  type="text" placeholder="Add new task...">
+                <input class="search-todo" id="search-task" type="text" placeholder="Search...">
+                <button class="search__btn">search</button>
+                <p style="margin-bottom: 5px;">Description</p>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                
+                <div class="select-content">
+                    <div class="date-select">
+                        <span>Due Date: </span>
+                        <input type="date" id="date" name="date">                 
+                    </div>
+     
+                     <div class="priority-select">
+                         <span>Priority: </span>
+                         <select id="priority" name="priority">
+                             <option value="low">Low</option>
+                             <option value="normal">Normal</option>
+                             <option value="high">High</option>
+                         </select>    
+                     </div>
+                </div>
+                
+                <div class="add-update">
+                    <button class="add-btn" type="submit" value="submit">Add</button>
+                    <button  class="update-btn" type="submit">Update</button>
+                </div>
+
+            </div>
+
+            <div class="content-show">
+                <p>Chưa có task nào cả !!! </p>
+            </div>
+            
+
+            <div id="bulk-handle">
+                <p>Bulk Action</p>
+                <div class="bulk-action">
+                    <button class="bulk-done-btn done-btn " type="submit">Done</button>
+                    <button class="bulk-remove-btn remove-btn" type="submit">Remove</button>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <!-- <script src="./todo.js"></script> -->
+</body>
+</html>
